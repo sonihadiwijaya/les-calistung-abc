@@ -8,7 +8,7 @@
 /* Font */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  background: linear-gradient(135deg, #0d47a1, #1976d2); /* full biru profesional */
   color: #f0f0f0;
   min-height: 100vh;
   padding-bottom: 80px;
@@ -106,7 +106,7 @@ header {
 .hero {
   text-align: center;
   padding: 60px 20px 40px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 80, 0.3); /* dark overlay tanpa kuning */
   border-radius: 15px;
   margin-top: 30px;
 }
