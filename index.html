@@ -8,17 +8,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Mengatur gaya untuk teks logo */
-    .logo {
-      font-size: 24px;
-      font-weight: 600;
+    /* Gaya untuk header tanpa logo, menggunakan judul biasa */
+    .header-title {
+      font-size: 48px; /* Membesarkan ukuran font */
+      font-weight: bold;
       color: #000;
       font-family: 'Poppins', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Menambahkan shadow pada teks */
     }
 
-    /* Mengatur gaya nomor telepon di footer */
+    /* Mengubah warna teks nomor telepon menjadi biru */
     .footer p a {
-      color: #000;
+      color: #007bff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -28,9 +29,9 @@
 
   <header>
     <nav class="navbar container">
-      <div class="logo">
-        <!-- Mengganti logo gambar dengan teks logo yang sederhana -->
-        <span>Les Calistung ABC</span>
+      <div class="header-title">
+        <!-- Judul tanpa logo, dengan font lebih besar dan shadow -->
+        LES CALISTUNG ABC
       </div>
       <ul class="nav-links">
         <li><a href="#intro">Beranda</a></li>
