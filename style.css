@@ -1,18 +1,18 @@
-/* Reset dasar */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Font */
+/* Font & Background */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0d47a1, #1976d2); /* full biru profesional */
-  color: #f0f0f0;
+  background-color: #004080; /* full biru gelap */
+  color: #fff;
   min-height: 100vh;
-  padding-bottom: 80px;
   line-height: 1.6;
+  padding-bottom: 80px;
 }
 
 /* Container */
@@ -24,8 +24,8 @@ body {
 
 /* Header & Navbar */
 header {
-  background-color: #0b3d91; /* biru navy gelap */
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  background-color: #00264d; /* lebih gelap */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -39,11 +39,11 @@ header {
 }
 
 .logo h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
   color: #ffdd00; /* kuning cerah */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
-  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  letter-spacing: 4px;
   user-select: none;
 }
 
@@ -70,7 +70,7 @@ header {
   color: #ffdd00;
 }
 
-/* Tombol WhatsApp */
+/* WhatsApp Button */
 .btn-wa {
   background-color: #25d366;
   padding: 10px 18px;
@@ -86,7 +86,7 @@ header {
   background-color: #1ebe58;
 }
 
-/* Hamburger menu - buat mobile */
+/* Hamburger menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -106,160 +106,146 @@ header {
 .hero {
   text-align: center;
   padding: 60px 20px 40px;
-  background: rgba(0, 0, 80, 0.3); /* dark overlay tanpa kuning */
-  border-radius: 15px;
+  background: rgba(0, 26, 77, 0.7);
+  border-radius: 10px;
   margin-top: 30px;
 }
 
 .hero h2 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
   color: #ffdd00;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
-.hero .highlight {
+.highlight {
+  font-weight: 900;
   font-style: italic;
 }
 
 .lead-text {
   font-size: 1.3rem;
-  margin-bottom: 30px;
-  color: #f1f1f1;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #f9f9f9;
 }
 
 .detailed-text {
-  font-size: 1.05rem;
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  color: #e6e6e6;
-  line-height: 1.8;
-  text-align: justify;
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto 30px;
+  color: #ddd;
+  line-height: 1.5;
 }
 
 .intro-image {
-  width: 100%;
-  max-width: 650px;
+  width: 90%;
+  max-width: 600px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-  margin: 30px auto;
+  margin: 25px auto 35px;
   display: block;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
 }
 
+/* Buttons */
 .btn-primary {
-  display: inline-block;
   background-color: #ffdd00;
-  color: #0b3d91;
+  color: #00264d;
   padding: 15px 40px;
+  border-radius: 50px;
   font-weight: 700;
-  font-size: 1.3rem;
-  border-radius: 40px;
+  font-size: 1.2rem;
   text-decoration: none;
-  box-shadow: 0 6px 15px rgba(255, 221, 0, 0.7);
+  display: inline-block;
+  box-shadow: 0 6px 15px rgba(255, 221, 0, 0.5);
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #e6c200;
-  color: #000;
+  background-color: #e6c900;
 }
 
-/* Section umum */
+/* Sections */
 .section {
-  background: #ffffff;
-  color: #222;
-  margin: 50px 0;
-  padding: 30px 30px 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  text-align: center;
+  background: rgba(0, 26, 77, 0.5);
+  margin: 30px 0;
+  padding: 30px 20px;
+  border-radius: 10px;
+  color: #f0f0f0;
 }
 
 .section h3 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #0d47a1;
-  font-weight: 700;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  color: #ffdd00;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .section p {
   font-size: 1.1rem;
-  line-height: 1.7;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Maps */
-iframe {
-  margin-top: 25px;
-  border-radius: 15px;
-  border: none;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  max-width: 100%;
-  height: 350px;
+  line-height: 1.6;
 }
 
 /* Footer */
 .footer {
-  background-color: #0b3d91;
-  color: #ffdd00;
+  background-color: #00264d;
   text-align: center;
-  padding: 18px 0;
+  padding: 20px 10px;
+  color: #ffdd00;
   font-weight: 600;
-  box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
   position: fixed;
-  width: 100%;
   bottom: 0;
-  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
 }
 
-/* Responsif */
-@media (max-width: 900px) {
-  .navbar {
-    flex-wrap: wrap;
-    height: auto;
-  }
-
+/* Responsive */
+@media (max-width: 768px) {
   .nav-links {
-    width: 100%;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: #00264d;
     flex-direction: column;
-    display: none;
-    margin-top: 15px;
+    align-items: center;
+    width: 70%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    padding-top: 70px;
   }
-
   .nav-links.nav-active {
-    display: flex;
+    transform: translateX(0);
   }
-
   .nav-links li {
-    margin: 10px 0;
+    margin: 30px 0;
   }
-
   .hamburger {
     display: flex;
   }
-}
+  .hamburger.toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 
-@media (max-width: 480px) {
   .hero h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
-
-  .lead-text,
-  .detailed-text {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .btn-primary {
-    padding: 12px 30px;
+  .lead-text {
     font-size: 1.1rem;
+  }
+  .detailed-text {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+  .intro-image {
+    max-width: 100%;
   }
 }
