@@ -47,12 +47,26 @@
       font-size: 18px;
       font-weight: 600;
       text-transform: uppercase;
+      border: 2px solid transparent; /* Border transparan */
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease-in-out;
     }
 
-    .nav-links a {
+    .nav-links li a {
       color: #333;
       text-decoration: none;
       transition: color 0.3s;
+    }
+
+    /* Kotak warna kuning pada hover */
+    .nav-links li:hover {
+      background-color: #ffeb3b; /* Warna kuning terang */
+      border: 2px solid #fbc02d; /* Border kuning */
+    }
+
+    .nav-links li:hover a {
+      color: #fff; /* Warna putih pada teks saat hover */
     }
 
     .nav-links a:hover {
@@ -86,7 +100,6 @@
         <li><a href="#jadwal">Jadwal</a></li>
         <li><a href="#permainan">Permainan</a></li>
         <li><a href="#lokasi">Lokasi</a></li>
-        <li><a href="https://wa.me/6281384048958" target="_blank" class="btn-wa">Hubungi WA</a></li>
       </ul>
     </nav>
   </header>
