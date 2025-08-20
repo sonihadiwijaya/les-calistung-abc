@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     /* Gaya untuk header yang lebih menarik */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
     header {
       background-color: #f5f5f5; /* Background header lebih terang */
       padding: 20px 0;
@@ -23,11 +29,11 @@
       padding: 0 20px;
     }
 
+    /* Header title */
     .header-title {
       font-size: 60px; /* Membesarkan ukuran font */
       font-weight: 700;
       color: #333; /* Warna teks gelap untuk kontras yang baik */
-      font-family: 'Poppins', sans-serif;
       text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Shadow halus */
       letter-spacing: -1px; /* Memperindah jarak antar huruf */
       transition: transform 0.3s ease-in-out;
@@ -37,6 +43,7 @@
       transform: scale(1.1); /* Efek zoom saat hover */
     }
 
+    /* Navbar links */
     .nav-links {
       list-style: none;
       display: flex;
@@ -69,10 +76,6 @@
       color: #fff; /* Warna putih pada teks saat hover */
     }
 
-    .nav-links a:hover {
-      color: #007bff; /* Warna biru pada hover */
-    }
-
     /* Menu mobile style */
     @media (max-width: 768px) {
       .nav-links {
@@ -91,10 +94,12 @@
 <body>
 
   <header>
-    <nav class="navbar container">
+    <nav class="navbar">
+      <!-- Header title -->
       <div class="header-title">
         LES PRIVAT CALISTUNG ABC
       </div>
+      <!-- Navigation links -->
       <ul class="nav-links">
         <li><a href="#intro">Beranda</a></li>
         <li><a href="#jadwal">Jadwal</a></li>
@@ -104,5 +109,13 @@
     </nav>
   </header>
 
+  <!-- Sections for the rest of the content -->
+  <section id="intro">
+    <h2>Selamat Datang di LES CALISTUNG ABC!</h2>
+    <!-- Other content... -->
+  </section>
+
+  <!-- Footer atau bagian lainnya -->
+  
 </body>
 </html>
