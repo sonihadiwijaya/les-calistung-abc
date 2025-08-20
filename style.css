@@ -1,248 +1,265 @@
-/* Reset */
+/* Reset dasar */
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Font */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #FFF8E1, #FFF59D);
-  color: #222;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #f0f0f0;
   min-height: 100vh;
   padding-bottom: 80px;
   line-height: 1.6;
 }
+
+/* Container */
 .container {
-  width: 90%;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* HEADER */
+/* Header & Navbar */
 header {
-  background-color: #222;
-  border-bottom: 5px solid #ffd633;
-  box-shadow: 0 4px 15px rgba(255, 214, 51, 0.7);
+  background-color: #0b3d91; /* biru navy gelap */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-}
-.logo h1 {
-  font-size: 3.8rem;
-  font-weight: 900;
-  color: #ffd633;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  user-select: none;
-  text-shadow:
-    0 0 8px #ffd633dd,
-    0 0 20px #ffd633bb,
-    0 0 30px #ffea0044,
-    0 0 40px #ffd633aa;
-  animation: glowing 2.5s ease-in-out infinite alternate;
-}
-@keyframes glowing {
-  0% {
-    text-shadow:
-      0 0 5px #ffd633cc,
-      0 0 10px #ffd633bb,
-      0 0 15px #ffea0044,
-      0 0 20px #ffd633aa;
-  }
-  100% {
-    text-shadow:
-      0 0 15px #ffd633ff,
-      0 0 25px #ffd633ee,
-      0 0 35px #ffea0077,
-      0 0 45px #ffd633ff;
-  }
-}
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-.nav-links li {
-  margin-left: 25px;
-}
-.nav-links a {
-  color: white;
-  font-weight: 600;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-.nav-links a:hover {
-  color: #ffd633;
-}
-.btn-wa {
-  background-color: #25d366;
-  color: white !important;
-  padding: 8px 16px;
-  border-radius: 25px;
-  font-weight: 700;
-  box-shadow: 0 4px 8px #25d366aa;
-  transition: background-color 0.3s ease;
-}
-.btn-wa:hover {
-  background-color: #1ebe57;
+  justify-content: space-between;
+  height: 70px;
 }
 
-/* Hamburger menu */
+.logo h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffdd00; /* kuning cerah */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  letter-spacing: 3px;
+  user-select: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #ffdd00;
+}
+
+/* Tombol WhatsApp */
+.btn-wa {
+  background-color: #25d366;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color: white !important;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.btn-wa:hover,
+.btn-wa:focus {
+  background-color: #1ebe58;
+}
+
+/* Hamburger menu - buat mobile */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
-}
-.hamburger span {
-  height: 3px;
   width: 25px;
-  background: white;
-  margin-bottom: 5px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-.toggle span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.toggle span:nth-child(2) {
-  opacity: 0;
-}
-.toggle span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* HERO/INTRO */
+.hamburger span {
+  height: 3px;
+  background: #ffdd00;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 0 5rem;
-  background: #fff3b0;
+  padding: 60px 20px 40px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  box-shadow: 0 10px 30px #ffec99aa;
+  margin-top: 30px;
 }
+
 .hero h2 {
   font-size: 3rem;
-  color: #ffa000;
-  margin-bottom: 1rem;
   font-weight: 700;
+  color: #ffdd00;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
+
 .hero .highlight {
-  color: #ff6f00;
-  text-shadow: 0 0 8px #ff6f00aa;
+  font-style: italic;
 }
+
 .lead-text {
   font-size: 1.3rem;
-  color: #444;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
+  color: #f1f1f1;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-}
-.intro-image {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px #ffca28bb;
-}
-.detailed-text {
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
-  color: #555;
-  font-size: 1rem;
   line-height: 1.7;
-}
-.btn-primary {
-  background-color: #ff6f00;
-  color: white;
-  padding: 15px 40px;
-  font-size: 1.3rem;
-  font-weight: 700;
-  border-radius: 35px;
-  box-shadow: 0 5px 15px #ff6f0055;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-.btn-primary:hover {
-  background-color: #e65c00;
-}
-.btn-big {
-  display: inline-block;
-  margin-top: 10px;
 }
 
-/* SECTION */
-.section {
-  margin: 4rem 0;
-  padding: 0 10px;
-  background: white;
+.detailed-text {
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #e6e6e6;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 650px;
   border-radius: 15px;
-  box-shadow: 0 10px 25px #ffd54f88;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  margin: 30px auto;
+  display: block;
 }
-.section h3 {
-  color: #ff6f00;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
+
+.btn-primary {
+  display: inline-block;
+  background-color: #ffdd00;
+  color: #0b3d91;
+  padding: 15px 40px;
   font-weight: 700;
-  text-shadow: 0 0 8px #ff6f0044;
+  font-size: 1.3rem;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(255, 221, 0, 0.7);
+  transition: background-color 0.3s ease;
 }
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e6c200;
+  color: #000;
+}
+
+/* Section umum */
+.section {
+  background: #ffffff;
+  color: #222;
+  margin: 50px 0;
+  padding: 30px 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0d47a1;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
 .section p {
   font-size: 1.1rem;
-  color: #444;
-  max-width: 750px;
-  margin: 0 auto;
   line-height: 1.7;
-  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Maps */
+iframe {
+  margin-top: 25px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  max-width: 100%;
+  height: 350px;
 }
 
 /* Footer */
 .footer {
-  background-color: #222;
-  color: #ffd633;
+  background-color: #0b3d91;
+  color: #ffdd00;
   text-align: center;
-  padding: 1rem 0;
-  position: relative;
-  bottom: 0;
+  padding: 18px 0;
+  font-weight: 600;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+  position: fixed;
   width: 100%;
-  font-weight: 500;
-  font-size: 0.9rem;
-  box-shadow: inset 0 4px 10px #ffca28cc;
+  bottom: 0;
+  left: 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Responsif */
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
   .nav-links {
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    top: 0;
-    background-color: #222;
+    width: 100%;
     flex-direction: column;
-    width: 200px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    padding-top: 4rem;
+    display: none;
+    margin-top: 15px;
   }
+
   .nav-links.nav-active {
-    transform: translateX(0);
+    display: flex;
   }
+
   .nav-links li {
-    margin: 20px 0;
+    margin: 10px 0;
   }
+
   .hamburger {
     display: flex;
   }
-  .container {
-    width: 95%;
-  }
+}
+
+@media (max-width: 480px) {
   .hero h2 {
     font-size: 2.2rem;
   }
-  .logo h1 {
-    font-size: 2.4rem;
+
+  .lead-text,
+  .detailed-text {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1rem;
   }
 }
