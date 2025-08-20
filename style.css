@@ -1,38 +1,33 @@
 /* General Styles */
-body {
-  font-family: 'Poppins', sans-serif;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #e1f5fe; /* Background soft blue */
-  color: #333; /* Ganti warna teks seluruh halaman jadi lebih gelap */
 }
 
-h1, h2, h3 {
-  font-weight: bold;
-  color: #333; /* Ganti warna judul agar lebih kontras */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Header Styles */
-header {
-  background-color: #00aaff;
-  color: white;
-  padding: 15px 0;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar .logo img {
-  width: 120px;
+  background-color: #333;
+  padding: 15px;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
+  list-style: none;
 }
 
 .nav-links li {
@@ -41,72 +36,44 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 1.2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.nav-links .btn-wa {
-  background-color: #ffcc00;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
+.nav-links a:hover {
+  color: #ffcc00;
 }
 
-.hamburger {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger span {
-    background-color: white;
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0;
-  }
-
-  .nav-links {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links.nav-active {
-    display: block;
-  }
+.logo-img {
+  width: 150px;
 }
 
 /* Hero Section */
 .hero {
-  background-color: #00aaff; 
+  background-image: url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80');
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 50px 0;
   text-align: center;
+  padding: 100px 0;
 }
 
 .hero h2 {
   font-size: 3rem;
-  color: white;
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6);
+  color: #ffcc00;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero .highlight {
-  color: #ffcc00;
+  font-weight: bold;
 }
 
 .hero .lead-text {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 20px auto;
-  line-height: 1.6;
-  color: #333; /* Ubah warna teks jadi lebih gelap */
+  font-size: 1.3rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 
 .hero .btn-primary {
@@ -116,9 +83,8 @@ header {
   border: none;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
@@ -126,29 +92,82 @@ header {
   background-color: #e0b300;
 }
 
-.intro-image {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  margin: 20px 0;
+/* Section */
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
 /* Footer */
 .footer {
-  background-color: #004d99;
-  color: white;
-  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
   text-align: center;
+  padding: 20px 0;
 }
 
-footer p {
-  margin: 0;
+.footer p {
   font-size: 1rem;
 }
 
-/* Section Titles */
-.section h3 {
-  font-size: 2rem;
-  color: #333; /* Ganti warna judul di setiap section */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.nav-active {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+  
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+  
+  .hamburger.toggle span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;
+  }
+  
+  .hamburger.toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.toggle span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;
+  }
 }
