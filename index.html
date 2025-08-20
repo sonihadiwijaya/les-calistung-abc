@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LES CALISTUNG ABC - Les Privat Calistung Terbaik di Bandung</title>
   <meta name="description" content="LES CALISTUNG ABC menyediakan les privat calistung terbaik di Bandung. Lokasi di Kopo Permai Blok 10CD No 24. Jadwal Senin-Jumat. Hubungi WA 081384048958 untuk pendaftaran." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <header>
     <nav class="navbar container">
       <div class="logo">
-        <h1>LES CALISTUNG ABC</h1>
+        <!-- Logo yang bebas lisensi -->
+        <img src="logo.png" alt="Les Calistung ABC" class="logo-img" />
       </div>
       <ul class="nav-links">
         <li><a href="#intro">Beranda</a></li>
@@ -48,26 +52,6 @@
     <a href="https://wa.me/6281384048958" target="_blank" class="btn-primary btn-big">Daftar Sekarang</a>
   </section>
 
-  <section id="testimoni" class="section container">
-    <h3>Testimoni Orang Tua</h3>
-    <p class="testimonial-text">
-      "Sejak anak saya ikut LES CALISTUNG ABC, kemajuannya luar biasa! Metode belajar yang menyenangkan membuat dia semangat belajar membaca, menulis, dan berhitung setiap hari." – Ibu Rina, Bandung
-    </p>
-    <p class="testimonial-text">
-      "Pengajar sangat sabar dan profesional. Anak saya tidak hanya pintar, tapi juga percaya diri. Saya sangat merekomendasikan LES CALISTUNG ABC untuk orang tua yang peduli masa depan anak." – Bapak Joko, Margahayu
-    </p>
-  </section>
-
-  <section id="penjelasan" class="section container">
-    <h3>Mengapa Memilih LES CALISTUNG ABC?</h3>
-    <p>
-      Dengan pengalaman lebih dari 20 tahun sejak tahun 2000, LES CALISTUNG ABC telah membimbing ribuan anak mencapai potensi terbaiknya. Kami menggabungkan metode belajar yang interaktif, permainan edukasi, dan pendekatan personal untuk memastikan setiap anak tidak hanya pintar, tetapi juga bahagia selama proses belajar. Kami percaya bahwa fondasi pendidikan yang kuat dimulai dari usia dini dan dibangun dengan cara yang tepat.
-    </p>
-    <p>
-      Bergabunglah dengan kami dan berikan anak Anda kesempatan terbaik untuk sukses dalam membaca, menulis, dan berhitung. LES CALISTUNG ABC, tempat terbaik untuk masa depan cemerlang anak Anda!
-    </p>
-  </section>
-
   <section id="jadwal" class="section container">
     <h3>Jadwal Les Privat</h3>
     <p>Les privat dilaksanakan Senin hingga Jumat dengan jadwal yang fleksibel sesuai kebutuhan anak dan keluarga.</p>
@@ -81,10 +65,8 @@
   <section id="lokasi" class="section container">
     <h3>Lokasi Kami</h3>
     <p>Kopo Permai Blok 10CD No 24, Bandung — mudah dijangkau dan nyaman untuk anak belajar.</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.123456789!2d107.610000!3d-6.900000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sLes%20Calistung%20ABC!5e0!3m2!1sen!2sid!4v1234567890" 
-      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.123456789!2d107.610000!3d-6.900000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sLes%20Calistung%20ABC!5e0!3m2!1sen!2sid!4v1234567890"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <footer class="footer">
@@ -94,12 +76,16 @@
   </footer>
 
   <script>
+    // Toggle Hamburger Menu
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('nav-active');
       hamburger.classList.toggle('toggle');
     });
   </script>
+
 </body>
+
 </html>
