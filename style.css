@@ -1,19 +1,6 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
 /* Header */
 header {
-  background-color: #4A90E2; /* Biru muda */
+  background-color: #4A90E2; /* Warna biru untuk header */
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -28,7 +15,7 @@ header {
 }
 
 .logo-img {
-  width: 150px;
+  width: 150px; /* Ukuran logo */
   height: auto;
 }
 
@@ -55,6 +42,7 @@ header {
   display: none;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -76,87 +64,5 @@ header {
 
   .nav-active {
     display: flex;
-  }
-}
-
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #fff;
-}
-
-.hero h2 {
-  font-size: 36px;
-  color: #4A90E2;
-  font-weight: 600;
-}
-
-.highlight {
-  color: #ff6347;
-}
-
-.lead-text {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.detailed-text {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-.btn-primary {
-  background-color: #4A90E2;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.btn-primary:hover {
-  background-color: #3a7bbf;
-}
-
-/* Section */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-/* Footer */
-.footer {
-  background-color: #4A90E2;
-  padding: 20px 0;
-  text-align: center;
-  color: white;
-  margin-top: 60px;
-}
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .hero {
-    padding: 40px 10px;
-  }
-
-  .lead-text {
-    font-size: 18px;
-  }
-
-  .detailed-text {
-    font-size: 16px;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
   }
 }
