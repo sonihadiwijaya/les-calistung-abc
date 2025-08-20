@@ -5,10 +5,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #e1f5fe; /* Background soft blue */
+  color: #333; /* Ganti warna teks seluruh halaman jadi lebih gelap */
 }
 
 h1, h2, h3 {
   font-weight: bold;
+  color: #333; /* Ganti warna judul agar lebih kontras */
 }
 
 /* Header Styles */
@@ -104,6 +106,7 @@ header {
   max-width: 800px;
   margin: 20px auto;
   line-height: 1.6;
+  color: #333; /* Ubah warna teks jadi lebih gelap */
 }
 
 .hero .btn-primary {
@@ -141,4 +144,11 @@ header {
 footer p {
   margin: 0;
   font-size: 1rem;
+}
+
+/* Section Titles */
+.section h3 {
+  font-size: 2rem;
+  color: #333; /* Ganti warna judul di setiap section */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
