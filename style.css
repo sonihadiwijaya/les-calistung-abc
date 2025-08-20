@@ -1,49 +1,135 @@
-/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 header {
-  background-color: #4A90E2; /* Warna biru untuk header */
+  background-color: #0044cc;
   padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
-.logo-img {
-  width: 150px; /* Ukuran logo */
-  height: auto;
+.navbar .logo img {
+  width: 150px;
 }
 
 .nav-links {
   display: flex;
-  list-style-type: none;
+  gap: 20px;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  list-style: none;
 }
 
 .nav-links a {
-  color: white;
-  font-size: 18px;
+  color: #fff;
   text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #ffcc00;
 }
 
-.hamburger {
-  display: none;
+.btn-wa {
+  background-color: #25d366;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+.hero {
+  background: url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80') no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff9900;
+}
+
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #0044cc;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+
   .hamburger {
     display: block;
     cursor: pointer;
@@ -53,16 +139,22 @@ header {
     width: 25px;
     height: 3px;
     background-color: white;
-    margin: 5px;
+    margin: 5px 0;
   }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+  .logo img {
+    width: 120px;
   }
 
-  .nav-active {
-    display: flex;
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 12px 25px;
   }
 }
