@@ -6,11 +6,10 @@
   <title>LES CALISTUNG ABC - Les Privat Terbaik di Bandung</title>
   <meta name="description" content="Les privat calistung terbaik di Bandung. Lokasi: Kopo Permai Blok 10CD No 24, Margahayu. WA: 081384048958." />
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Playfair Display + Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -25,46 +24,62 @@
         <li><a href="#lokasi">Lokasi</a></li>
         <li><a href="https://wa.me/6281384048958" target="_blank" class="btn-wa">Hubungi WA</a></li>
       </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
   <!-- HERO -->
   <section id="intro" class="hero container">
-    <h2>Selamat Datang di <span class="highlight">LES CALISTUNG ABC</span></h2>
-    <p class="lead-text">Les privat calistung terbaik di Bandung. Metode belajar menyenangkan & personal.</p>
+    <h1>Selamat Datang di <span class="highlight">LES CALISTUNG ABC</span></h1>
+    <p class="lead-text">Les privat calistung terbaik di Bandung dengan metode belajar menyenangkan dan personal.</p>
     <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1200&q=80" alt="Anak-anak belajar dengan gembira" class="intro-image" />
     <p class="detailed-text">
-      Kami menyediakan pembelajaran membaca, menulis, dan berhitung dengan pendekatan edukatif dan kreatif. Jadwal fleksibel, pengajar berpengalaman, dan lingkungan belajar yang nyaman.
+      Kami menyediakan pembelajaran membaca, menulis, dan berhitung dengan pendekatan edukatif dan kreatif.<br />
+      Jadwal fleksibel, pengajar berpengalaman, dan lingkungan belajar nyaman.<br />
+      Daftarkan anak Anda sekarang dan buat masa depan cerah bersama kami!
     </p>
     <a href="https://wa.me/6281384048958" target="_blank" class="btn-primary">Daftar Sekarang</a>
   </section>
 
   <!-- JADWAL -->
   <section id="jadwal" class="section container">
-    <h3>Jadwal Les Privat</h3>
+    <h2>Jadwal Les Privat</h2>
     <p>Senin – Jumat, fleksibel sesuai kebutuhan anak dan keluarga.</p>
   </section>
 
   <!-- PERMAINAN -->
   <section id="permainan" class="section container">
-    <h3>Permainan Edukasi</h3>
+    <h2>Permainan Edukasi</h2>
     <p>Kegiatan interaktif seperti mewarnai, puzzle, logika, dan aktivitas motorik anak.</p>
   </section>
 
   <!-- LOKASI -->
   <section id="lokasi" class="section container">
-    <h3>Lokasi Kami</h3>
+    <h2>Lokasi Kami</h2>
     <p>Kopo Permai II Blok 10CD No 24, Margahayu, Kabupaten Bandung.</p>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.123456789!2d107.610000!3d-6.900000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sLes%20Calistung%20ABC!5e0!3m2!1sen!2sid!4v1234567890" 
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.123456789!2d107.610000!3d-6.900000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sLes%20Calistung%20ABC!5e0!3m2!1sen!2sid!4v1234567890"
       width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 LES CALISTUNG ABC • <a href="tel:+62225423293">Hubungi: 022-5423293</a></p>
+    <p>&copy; 2025 LES CALISTUNG ABC &nbsp;|&nbsp; <a href="tel:+62225423293">Hubungi: 022-5423293</a></p>
   </footer>
+
+  <script>
+    // Toggle Hamburger Menu (responsive)
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
 
 </body>
 </html>
